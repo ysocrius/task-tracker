@@ -1,0 +1,75 @@
+/* Filter Buttons Styling */
+/* Controls container */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .controls {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.filter-buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #e0e0e0;
+  color: #333;
+  font-weight: 500;
+}
+
+.filter-buttons button.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.filter-buttons button:hover:not(.active) {
+  background-color: #d0d0d0;
+  opacity: 0.9;
+}
+
+/* Dark mode styles */
+body.dark-mode .filter-buttons button {
+  background-color: #444;
+  color: #ccc;
+}
+
+body.dark-mode .filter-buttons button.active {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+body.dark-mode .filter-buttons button:hover:not(.active) {
+  background-color: #555;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .filter-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .filter-buttons button {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+  }
+} 

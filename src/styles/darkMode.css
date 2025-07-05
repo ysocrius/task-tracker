@@ -1,0 +1,224 @@
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* Two column layout dark mode */
+body.dark-mode .task-header {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .right-column {
+  border-left-color: #444;
+}
+
+/* Mobile dark mode fixes */
+@media (max-width: 768px) {
+  body.dark-mode .task-header {
+    background-color: #2a2a2a;
+  }
+  
+  body.dark-mode .task-actions {
+    border-top-color: #444;
+  }
+}
+
+body.dark-mode .task-list-container {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+body.dark-mode .task-item {
+  background-color: #2a2a2a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .task-item:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .task-description {
+  border-left-color: #444;
+}
+
+body.dark-mode .checkbox-container {
+  color: #bbb;
+}
+
+/* General dark mode container backgrounds */
+body.dark-mode .app-header,
+body.dark-mode .login-container,
+body.dark-mode .task-form,
+body.dark-mode .tasks-container,
+body.dark-mode .task-item {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+/* Inputs in dark mode */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode .date-picker {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+/* Headings in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #fff;
+}
+
+/* Labels and form elements */
+body.dark-mode label,
+body.dark-mode .form-group label,
+body.dark-mode .character-counter {
+  color: #ccc;
+}
+
+/* Task items */
+body.dark-mode .task-item {
+  border-color: #444;
+}
+
+body.dark-mode .task-item.completed {
+  background-color: #2a3a2a;
+  border-left-color: #2e7d32;
+}
+
+/* Task description */
+body.dark-mode .task-description {
+  color: #bbb;
+}
+
+/* Task dates */
+body.dark-mode .task-date,
+body.dark-mode .task-dates {
+  color: #aaa;
+}
+
+body.dark-mode .task-due-date.approaching {
+  background-color: #3e2a00;
+  color: #ffb74d;
+}
+
+body.dark-mode .task-due-date.overdue {
+  background-color: #4a1515;
+  color: #ff8a80;
+}
+
+/* Buttons */
+body.dark-mode .btn {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #555;
+}
+
+body.dark-mode .btn-delete {
+  background-color: #6b2020;
+}
+
+body.dark-mode .btn-delete:hover {
+  background-color: #8b2020;
+}
+
+/* Filter buttons */
+body.dark-mode .filter-btn {
+  color: #ccc;
+}
+
+body.dark-mode .filter-btn.active {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+body.dark-mode .filter-btn:hover:not(.active) {
+  background-color: #333;
+}
+
+/* Priority badges */
+body.dark-mode .priority-badge {
+  border-color: #444;
+}
+
+body.dark-mode .priority-high {
+  background-color: #4a1515;
+  color: #ff8a80;
+}
+
+body.dark-mode .priority-medium {
+  background-color: #3e2a00;
+  color: #ffb74d;
+}
+
+body.dark-mode .priority-low {
+  background-color: #133a1b;
+  color: #81c784;
+}
+
+/* Tag badges */
+body.dark-mode .tag-badge {
+  background-color: #333;
+  color: #bbb;
+}
+
+body.dark-mode .tag-badge:hover {
+  background-color: #444;
+}
+
+body.dark-mode .tag-badge.active {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+/* Search bar */
+body.dark-mode .search-input {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark-mode .search-input:focus {
+  border-color: #1976d2;
+}
+
+/* No tasks message */
+body.dark-mode .no-tasks {
+  color: #999;
+}
+
+/* Fix any camouflaged elements */
+body.dark-mode .checkbox-container {
+  background-color: #333;
+  border-color: #555;
+}
+
+body.dark-mode .checkbox-container input:checked + .checkmark {
+  background-color: #1976d2;
+}
+
+body.dark-mode .checkmark {
+  border-color: #777;
+}
+
+/* Make sure the "Add Task" button stands out */
+body.dark-mode button[type="submit"],
+body.dark-mode .btn-primary {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+body.dark-mode button[type="submit"]:hover,
+body.dark-mode .btn-primary:hover {
+  background-color: #2186e4;
+} 

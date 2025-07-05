@@ -1,0 +1,170 @@
+/* Light Mode Styles */
+body:not(.dark-mode) {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* General light mode container backgrounds */
+body:not(.dark-mode) .login-container,
+body:not(.dark-mode) .task-form,
+body:not(.dark-mode) .tasks-container,
+body:not(.dark-mode) .task-item {
+  background-color: #fff;
+  border-color: #e0e0e0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs in light mode */
+body:not(.dark-mode) input,
+body:not(.dark-mode) textarea,
+body:not(.dark-mode) select,
+body:not(.dark-mode) .date-picker {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+/* Headings in light mode */
+body:not(.dark-mode) h1,
+body:not(.dark-mode) h2,
+body:not(.dark-mode) h3 {
+  color: #2c3e50;
+}
+
+body:not(.dark-mode) h4,
+body:not(.dark-mode) h5,
+body:not(.dark-mode) h6 {
+  color: #34495e;
+}
+
+/* Labels and form elements */
+body:not(.dark-mode) label,
+body:not(.dark-mode) .form-group label {
+  color: #555;
+  font-weight: 500;
+}
+
+/* Task items */
+body:not(.dark-mode) .task-item {
+  border: 1px solid #e0e0e0;
+}
+
+body:not(.dark-mode) .task-item.completed {
+  background-color: #f8f9fa;
+  border-left: 4px solid #27ae60;
+}
+
+/* Task description */
+body:not(.dark-mode) .task-description {
+  color: #444;
+}
+
+/* Task dates */
+body:not(.dark-mode) .task-date,
+body:not(.dark-mode) .task-dates {
+  color: #666;
+}
+
+body:not(.dark-mode) .task-due-date.approaching {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+body:not(.dark-mode) .task-due-date.overdue {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Buttons */
+body:not(.dark-mode) .btn {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+body:not(.dark-mode) .btn:hover {
+  background-color: #d0d0d0;
+}
+
+body:not(.dark-mode) .btn-delete {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+body:not(.dark-mode) .btn-delete:hover {
+  background-color: #ffcdd2;
+}
+
+/* Navigation */
+body:not(.dark-mode) .navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Search bar */
+body:not(.dark-mode) .search-input {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+body:not(.dark-mode) .search-input:focus {
+  border-color: #3498db;
+}
+
+/* Filter buttons */
+body:not(.dark-mode) .filter-buttons button {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+body:not(.dark-mode) .filter-buttons button.active {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Priority badges with better contrast */
+body:not(.dark-mode) .priority-high {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+body:not(.dark-mode) .priority-medium {
+  background-color: #fff3e0;
+  color: #e65100;
+  border: 1px solid #ffe0b2;
+}
+
+body:not(.dark-mode) .priority-low {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+/* Make the primary button stand out */
+body:not(.dark-mode) button[type="submit"],
+body:not(.dark-mode) .btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+body:not(.dark-mode) button[type="submit"]:hover,
+body:not(.dark-mode) .btn-primary:hover {
+  background-color: #2980b9;
+}
+
+/* Checkbox styling */
+body:not(.dark-mode) .checkbox-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+body:not(.dark-mode) .checkbox-container input:checked + .checkmark {
+  background-color: #3498db;
+}
+
+body:not(.dark-mode) .checkmark {
+  border: 1px solid #bbb;
+} 

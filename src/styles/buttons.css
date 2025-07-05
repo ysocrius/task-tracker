@@ -1,0 +1,151 @@
+/* Unified Button Styles */
+
+/* Base button style */
+.btn, 
+button[type="submit"],
+.filter-buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Primary button */
+.btn-primary,
+button[type="submit"],
+.filter-buttons button.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover,
+button[type="submit"]:hover,
+.filter-buttons button.active:hover {
+  background-color: #2980b9;
+  opacity: 0.95;
+}
+
+/* Secondary button */
+.btn,
+.filter-buttons button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn:hover,
+.filter-buttons button:hover:not(.active) {
+  background-color: #d0d0d0;
+  opacity: 0.9;
+}
+
+/* Edit button */
+.btn-edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #e67e22;
+  opacity: 0.95;
+}
+
+/* Delete button */
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+  opacity: 0.95;
+}
+
+/* Cancel button */
+.btn-cancel {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #7f8c8d;
+  opacity: 0.95;
+}
+
+/* Logout button */
+.btn-logout {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 0.8rem;
+  padding: 8px 12px;
+}
+
+.btn-logout:hover {
+  background-color: #c0392b;
+  opacity: 0.95;
+}
+
+/* Dark mode styles */
+body.dark-mode .btn,
+body.dark-mode .filter-buttons button {
+  background-color: #444;
+  color: #ccc;
+}
+
+body.dark-mode .btn-primary,
+body.dark-mode button[type="submit"],
+body.dark-mode .filter-buttons button.active {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+body.dark-mode .btn-primary:hover,
+body.dark-mode button[type="submit"]:hover,
+body.dark-mode .filter-buttons button.active:hover {
+  background-color: #1565c0;
+  opacity: 0.95;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .filter-buttons button:hover:not(.active) {
+  background-color: #555;
+}
+
+body.dark-mode .btn-edit {
+  background-color: #d68910;
+  color: white;
+}
+
+body.dark-mode .btn-edit:hover {
+  background-color: #b9770e;
+}
+
+body.dark-mode .btn-delete {
+  background-color: #c0392b;
+  color: white;
+}
+
+body.dark-mode .btn-delete:hover {
+  background-color: #a93226;
+}
+
+body.dark-mode .btn-cancel {
+  background-color: #7f8c8d;
+  color: white;
+}
+
+body.dark-mode .btn-cancel:hover {
+  background-color: #6c7a7a;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .btn, 
+  button[type="submit"],
+  .filter-buttons button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+} 

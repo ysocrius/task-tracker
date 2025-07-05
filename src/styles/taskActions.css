@@ -1,0 +1,142 @@
+/* Task Actions Styling */
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  margin-top: 15px;
+  gap: 12px;
+}
+
+body.dark-mode .task-actions {
+  border-top-color: #444;
+}
+
+/* Task actions top section */
+.task-actions-top {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* Checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #555;
+  user-select: none;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .checkbox-container {
+  color: #ccc;
+}
+
+/* Checkbox hover effect */
+.checkbox-container:hover {
+  color: #3498db;
+}
+
+body.dark-mode .checkbox-container:hover {
+  color: #1976d2;
+}
+
+/* Hide the default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom checkbox */
+.checkmark {
+  position: relative;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 8px;
+  transition: all 0.2s ease;
+}
+
+body.dark-mode .checkmark {
+  background-color: #333;
+  border-color: #555;
+}
+
+/* Checkbox hover effect */
+.checkbox-container:hover .checkmark {
+  border-color: #3498db;
+}
+
+body.dark-mode .checkbox-container:hover .checkmark {
+  border-color: #1976d2;
+}
+
+/* When the checkbox is checked */
+.checkbox-container input:checked + .checkmark {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+body.dark-mode .checkbox-container input:checked + .checkmark {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+/* Checkmark indicator */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked + .checkmark:after {
+  display: block;
+}
+
+/* Task buttons container */
+.task-buttons {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .task-buttons {
+    justify-content: space-between;
+  }
+  
+  .task-buttons button {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* Completed task styling */
+.task-item.completed .checkbox-container {
+  color: #27ae60;
+}
+
+body.dark-mode .task-item.completed .checkbox-container {
+  color: #2ecc71;
+} 
