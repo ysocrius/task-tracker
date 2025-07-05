@@ -176,9 +176,9 @@ The application is fully responsive and provides an optimal experience across:
 ## 🖼️ Screenshots
 
 ![Dashboard Screenshot](screenshots/dashboard.png)
-![Task Form Screenshot](screenshots/task-form.png)
+![Dark Mode Screenshot](screenshots/dark-mode.png)
 ![Mobile View](screenshots/mobile-view.png)
-![Dark Mode](screenshots/dark-mode.png)
+
 
 ## 🚫 Limitations
 
