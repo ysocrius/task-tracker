@@ -2,7 +2,7 @@
   "name": "task-tracker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yeshw.github.io/task-tracker",
+  "homepage": "https://ysocrius.github.io/task-tracker",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -21,7 +21,7 @@
     "test:all": "node test-all.js",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "cross-env GIT_EXEC_PATH=\"C:\\Program Files\\Git\\cmd\\git.exe\" gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.1.0"
   }
 }
